@@ -49,7 +49,6 @@ txtWriter.write("-----------------------------\n")
 for k, v in candidates.items():
     votesPercentage = (v / totalVotes) * 100
     text = f'{k}: %.03f'%votesPercentage + f'% ({v})\n'
-    #txtWriter(f'{k}: %.03f'%votesPercentage + f'% ({v})\n')
     txtWriter.write(text)
 txtWriter.write("-----------------------------\n")
 txtWriter.write(f'Winner: {winner}\n')
